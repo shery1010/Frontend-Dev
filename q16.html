@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16. URI Encoding</title>
+</head>
+<body>
+
+    <h1>16. URI Encoding Example</h1>
+
+    <p>
+        URI (Uniform Resource Identifier) encoding is necessary to ensure that all characters
+        used in a URL are within the allowed set of ASCII characters. Special characters,
+        such as spaces, must be converted to a percent-encoded format.
+    </p>
+
+    <h2>Original Link (Not Encoded)</h2>
+    <p>
+        <code style="background-color: #eee; padding: 2px;">https://example.com/search?query=HTML & CSS</code>
+    </p>
+
+    <h2>Correct Encoded Link</h2>
+    <p>
+        In URI encoding, the **space character** is commonly encoded as <mark>%20</mark>
+        (or sometimes as a plus sign '+', though %20 is the official standard for spaces in the query part).
+        The ampersand (<mark>&amp;</mark>) is also a reserved character in a query string and should be encoded as <mark>%26</mark> if it's meant to be part of the search term.
+    </p>
+    <p>
+        <code style="background-color: #eee; padding: 2px;">https://example.com/search?query=HTML%20%26%20CSS</code>
+    </p>
+
+    <p>
+        <a href="https://example.com/search?query=HTML%20%26%20CSS">Encoded Search Link</a>
+    </p>
+
+</body>
+</html>

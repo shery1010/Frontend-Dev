@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15. Payment Form</title>
+</head>
+<body>
+
+    <h1>15. Payment Information</h1>
+
+    <form action="#" method="post">
+        <p>
+            <label for="cardholder_name">Cardholder Name:</label>
+            <br>
+            <input type="text" id="cardholder_name" name="cardholder_name" required>
+        </p>
+
+        <p>
+            <label for="card_number">Card Number:</label>
+            <br>
+            <input type="text" id="card_number" name="card_number" required
+                   pattern="[0-9]{13,16}" title="Card number must be 13 to 16 digits">
+        </p>
+
+        <p>
+            <label for="expiry_date">Expiry Date (MM/YY):</label>
+            <br>
+            <input type="text" id="expiry_date" name="expiry_date" required
+                   placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" title="Format: MM/YY">
+        </p>
+
+        <p>
+            <label for="cvv">CVV:</label>
+            <br>
+            <input type="text" id="cvv" name="cvv" required
+                   pattern="[0-9]{3,4}" title="CVV must be 3 or 4 digits" maxlength="4" style="width: 50px;">
+        </p>
+
+        <p>
+            <button type="submit">Pay Now</button>
+        </p>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9. File Upload Form</title>
+</head>
+<body>
+
+    <h1>9. Upload Image File</h1>
+
+    <p>
+        Please upload your image file. We only accept files with
+        the <strong>.jpg</strong> or <strong>.png</strong> extension.
+    </p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <p>
+            <label for="image_file">Select File:</label>
+            <br>
+            <input
+                type="file"
+                id="image_file"
+                name="image_upload"
+                accept=".jpg, .png, image/jpeg, image/png"
+                required>
+        </p>
+
+        <p>
+            <button type="submit">Upload File</button>
+        </p>
+    </form>
+
+</body>
+</html>

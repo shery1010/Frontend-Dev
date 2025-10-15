@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8. Feedback Form</title>
+</head>
+<body>
+
+    <h1>8. Customer Feedback</h1>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="feedback_text">Your Feedback:</label>
+            <br>
+            <textarea id="feedback_text" name="feedback" rows="5" cols="40" placeholder="Please share your thoughts..."></textarea>
+        </p>
+
+        <p>
+            <strong>Overall Rating:</strong>
+            <br>
+            <input type="radio" id="rating_good" name="rating" value="Good" required>
+            <label for="rating_good">Good</label>
+            <br>
+            <input type="radio" id="rating_average" name="rating" value="Average">
+            <label for="rating_average">Average</label>
+            <br>
+            <input type="radio" id="rating_poor" name="rating" value="Poor">
+            <label for="rating_poor">Poor</label>
+        </p>
+
+        <p>
+            <button type="submit">Submit Feedback</button>
+        </p>
+    </form>
+
+</body>
+</html>

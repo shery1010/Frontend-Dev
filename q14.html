@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14. Embedding External Content</title>
+</head>
+<body>
+
+    <h1>14. External Website Embed</h1>
+
+    <h2>Wikipedia Embedded</h2>
+    <iframe
+        src="https://www.wikipedia.org"
+        width="800"
+        height="400"
+        title="Embedded Wikipedia Website"
+        frameborder="1">
+    </iframe>
+
+    <p>
+        <strong>Note:</strong> Some websites may not allow embedding for security reasons.
+        This is often controlled by the `X-Frame-Options` or `Content-Security-Policy`
+        HTTP headers set by the external site's server to prevent clickjacking attacks.
+        If the iframe is blank, the external site has blocked embedding.
+    </p>
+
+</body>
+</html>

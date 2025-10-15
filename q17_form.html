@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17. Form Submission into Iframe (Form Page)</title>
+</head>
+<body>
+
+    <h1>17. Form Submission Test</h1>
+
+    <form action="result.html" method="get" target="result_frame">
+        <p>
+            <label for="text_input">Enter Text:</label>
+            <input type="text" id="text_input" name="user_text" required>
+        </p>
+        <p>
+            <button type="submit">Submit and See Result Below</button>
+        </p>
+    </form>
+
+    <h2>Submission Result Area:</h2>
+
+    <iframe
+        name="result_frame"
+        srcdoc="<p>Submit the form above to see the result here.</p>"
+        width="400"
+        height="100"
+        title="Form Submission Result"
+        frameborder="1">
+    </iframe>
+
+</body>
+</html>

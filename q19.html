@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>19. Form Security (Autocomplete Off)</title>
+</head>
+<body>
+
+    <h1>19. Security Form Demonstration</h1>
+
+    <form action="#" method="post" autocomplete="off">
+        <h2>Confidential Login</h2>
+
+        <p>
+            <label for="account_id">Account ID:</label>
+            <br>
+            <input type="text" id="account_id" name="account_id" required>
+        </p>
+
+        <p>
+            <label for="pin">PIN/Secret Code:</label>
+            <br>
+            <input type="password" id="pin" name="pin" required>
+        </p>
+
+        <p>
+            <button type="submit">Submit Secure Data</button>
+        </p>
+    </form>
+
+    <hr>
+
+    <h2>Security Note on Autocomplete</h2>
+    <p>
+        Turning off **<mark>autocomplete</mark>** on a form or an input field (especially for sensitive data like passwords, PINS, or security questions) can improve security in the following ways:
+        <ul>
+            <li>
+                <strong>Prevents Data Exposure:</strong> It stops the browser from saving or suggesting sensitive information. If a user is on a shared or public computer, this prevents the next user from easily accessing saved credentials by simply clicking or typing the first character.
+            </li>
+            <li>
+                <strong>Mitigates XSS/CSRF Risk:</strong> While not a primary defense, it reduces the risk of malicious scripts (Cross-Site Scripting) or attacks (Cross-Site Request Forgery) from automatically harvesting or submitting saved user data from the browser's autofill cache.
+            </li>
+        </ul>
+        For modern browsers, it is often recommended to use `<input type="current-password">` or `<input type="new-password">` instead of `autocomplete="off"`, as browsers will respect these for enhanced security while allowing for password manager integration. However, `autocomplete="off"` still serves its function.
+    </p>
+
+</body>
+</html>
