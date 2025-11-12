@@ -1,5 +1,5 @@
 // Data Variables
-let userName = "Pushpendra";
+let userName = "Shreya";
 let userAge = 18;
 let isPremiumUser = true;
 let favoriteColors = ["Red", "Blue"];
